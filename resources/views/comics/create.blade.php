@@ -30,7 +30,7 @@
                         </div>
                         <div class="col-3">
                             <label class="control-label my-2 fw-bold text-light">Data di Uscita</label>
-                            <input type="text" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita">
+                            <input type="date" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita">
                         </div>
                         <div class="col-3">
                             <label class="control-label my-2 fw-bold text-light">Serie</label>
