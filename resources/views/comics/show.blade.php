@@ -7,13 +7,16 @@
 
     </div>
     <div class="container mb-5">
+        <div class="intermezzo">
+            <img src="{{$comic['thumb']}}">
+        </div>
         <div class="row ">
             <div class="col-8 d-flex flex-column justify-content-between ">
                 <h1 class="light-blu ">{{ $comic['title'] }}</h1>
                 <div class="row d-flex bg-green  border-bottom border-1 border-dark align-items-center py-2">
                     <div class="col-9 d-flex justify-content-between align-items-center  mt-2">
                         <div class="d-flex">
-                            <span class=" light-green">U.S. Price:</span><p class="m-0 text-light"> {{$comic['price']}}</p>
+                            <span class=" light-green">U.S. Price:</span><p class="me-2 text-light"> {{$comic['price']}}</p>
                         </div>
                     <p class="m-0 light-green">AVAIABLE</p>
                     </div>
@@ -51,7 +54,7 @@
                     </div>
                     <div class="row d-flex justify-content-between  border-bottom border-1 ">
                         <div class="col-3 pt-2">
-                            <p class="light-blu fw-bold">U.S. Price:</p>
+                            <p class="light-blu fw-bold">U.S. Price:  </p>
                         </div>
                         <div class="col-7 pt-2">
                             <p >{{$comic['price']}}</p>
