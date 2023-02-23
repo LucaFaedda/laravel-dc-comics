@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController;
 use App\Http\Controllers\PagesController;
 
 
@@ -27,6 +28,7 @@ use App\Http\Controllers\PagesController;
 
 // Route::get('/', [ComicController::class, 'index']) -> name('home');
 Route::get('/', [PagesController::class, 'index']) -> name('welcome');
+Route::resource('comics', ComicController::class);
 
 // sezione caracters
 
