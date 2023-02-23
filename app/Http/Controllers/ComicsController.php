@@ -52,7 +52,12 @@ class ComicsController extends Controller
      */
     public function show($id)
     {
-        //
+        $listaFooter = config('footer'); 
+        $listaIcone = config('icons');
+        $listaSocial= config('social');
+        $comics = Comics::findOrFail($id);
+
+        return view('comics.show', compact('comics', 'listaFooter', 'listaIcone', 'listaSocial'));
     }
 
     /**
