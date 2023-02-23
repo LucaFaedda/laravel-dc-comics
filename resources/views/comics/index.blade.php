@@ -11,7 +11,7 @@
             <div class='row'>
                 <div class='col-12 py-5'>
                     <div class="row">
-                            @foreach ($prodotto as  $fumetto)
+                            @foreach ($comics as  $fumetto)
             
                                 <div class="card-personalizzata">
                                     <a href="/comics_singolo/{id}', ['id' => $fumetto['id']])">

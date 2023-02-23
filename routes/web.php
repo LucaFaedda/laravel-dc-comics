@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ComicController;
+use App\Http\Controllers\ComicsController;
 use App\Http\Controllers\PagesController;
 
 
@@ -16,20 +16,19 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', function () {
-//     $prodotto = config('comics');
-//     $listaFooter = config('footer'); 
-//     $listaIcone = config('icons');
-//     $listaSocial= config('social');
-//     return view('home', compact('prodotto', 'listaFooter', 'listaIcone', 'listaSocial'));
-// })->name('home');
 
 // rotta per passare ComicController
 
-// Route::get('/', [ComicController::class, 'index']) -> name('home');
-Route::get('/', [PagesController::class, 'index']) -> name('welcome');
-Route::resource('comics', ComicController::class);
 
+Route::get('/', [PagesController::class, 'index']) -> name('welcome');
+Route::resource('comics', ComicsController::class);
+
+Route::get('index', function () {
+    $listaFooter = config('footer'); 
+    $listaIcone = config('icons');
+    $listaSocial= config('social');
+    return view('comics.index', compact('listaFooter', 'listaIcone', 'listaSocial'));
+});
 // sezione caracters
 
 Route::get('caracters', function () {
