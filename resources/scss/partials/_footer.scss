@@ -1,0 +1,47 @@
+a {
+    color: #959595;
+    text-decoration: none;
+}
+
+.bk-blue {
+    background-color: #0282f9;
+}
+
+.bk-image {
+    background-image: url('../../img/footer-bg.jpg');
+    background-size: cover;
+}
+
+.bk-image-2 {
+    background-image: url('../../img/dc-logo-bg.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 2rem 0rem;
+}
+
+.image-personal {
+    img {
+        width: 50px;
+    }
+}
+
+.bk-grey {
+    background-color: #303030;
+}
+
+.btn-personal {
+    padding: 15px;
+    border: 1px solid #0282f9;
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.personal-size {
+    font-size: 11px;
+}
+
+.color-blu {
+    color: #0282f9;
+}

@@ -1,0 +1,32 @@
+.bk-dark {
+    background-color: #1c1c1c;
+}
+
+.card-personalizzata {
+    width: calc(100% / 6 - 6px);
+    margin: 3px;
+}
+
+
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        width: 70%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-20%);
+    }
+}
+
+.btn-personalizzato {
+    background-color: #0282f9;
+    border: none;
+    padding: 15px 70px;
+
+}

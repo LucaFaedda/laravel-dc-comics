@@ -1,0 +1,45 @@
+@use './variables' as *;
+@use './mixin' as *;
+
+
+.bg-green {
+    background-color: #55ba59;
+}
+
+.light-green {
+    color: #adfd9c;
+}
+
+.light-blu {
+    color: #003f5e
+}
+
+.light-blu-2 {
+    color: #24b1da;
+}
+
+
+.select-personalizzata {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.jumbo {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../img/jumbotron.jpg");
+    background-size: cover;
+}
+
+.h-100px {
+    height: 70px;
+    background-color: #0282f9;
+    margin-bottom: 4rem;
+
+}
+
+.bk-gray2 {
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+}
