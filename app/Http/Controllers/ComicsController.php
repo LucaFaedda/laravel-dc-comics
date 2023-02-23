@@ -30,7 +30,10 @@ class ComicsController extends Controller
      */
     public function create()
     {
-        //
+        $listaFooter = config('footer'); 
+        $listaIcone = config('icons');
+        $listaSocial= config('social');
+        return view('comics.create', compact('listaFooter', 'listaIcone', 'listaSocial'));
     }
 
     /**
@@ -41,7 +44,7 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_data = $request->all();
     }
 
     /**
