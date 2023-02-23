@@ -25,7 +25,7 @@
             <div class='col-9'>
                 <ul class='list-unstyled d-flex ' >
                     <li>
-                        <a class="nav-link {{Route::currentRouteName()== 'home' ? 'active' : ''}}" href="{{route('home')}}" >HOME</a> 
+                        <a class="nav-link {{Route::currentRouteName()== 'home' ? 'active' : ''}}" href="{{url('/')}}" >HOME</a> 
                     </li>
                     <li>
                        <a class="nav-link {{Route::currentRouteName()== 'caracters' ? 'active' : ''}}" href="{{route('caracters')}}" >CHARACTERS</a> 
