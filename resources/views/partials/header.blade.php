@@ -27,14 +27,12 @@
                     <li>
                         <a class="nav-link {{Route::currentRouteName()== 'home' ? 'active' : ''}}" href="{{url('/')}}" >HOME</a> 
                     </li>
-                    <li>
-                       <a  href="{{route('comics.index')}}">INDEX</a> 
-                    </li>
+
                     <li>
                        <a  >CHARACTERS</a> 
                     </li>
                     <li>
-                        <a  >COMICS</a> 
+                        <a href="{{route('comics.index')}}" >COMICS</a> 
                      </li>
                      <li>
                         <a  >MOVIES</a> 

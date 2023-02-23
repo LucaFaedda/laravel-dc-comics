@@ -55,9 +55,16 @@ class ComicsController extends Controller
         $listaFooter = config('footer'); 
         $listaIcone = config('icons');
         $listaSocial= config('social');
-        $comics = Comics::findOrFail($id);
+        $comic = Comics::findOrFail($id);
 
-        return view('comics.show', compact('comics', 'listaFooter', 'listaIcone', 'listaSocial'));
+        
+        // if($comics){
+        //     $data = [
+        //         'comics' => $comics
+        //     ];
+        // }
+        
+        return view('comics.show', compact('comic', 'listaFooter', 'listaIcone', 'listaSocial'));
     }
 
     /**
