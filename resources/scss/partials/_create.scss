@@ -1,0 +1,14 @@
+@use './variables' as *;
+@use './mixin' as *;
+
+
+.bk-dark {
+    background-color: #1c1c1c;
+}
+
+.jumbo {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../img/jumbotron.jpg");
+    background-size: cover;
+}
