@@ -23,101 +23,101 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'index']) -> name('welcome');
 Route::resource('comics', ComicsController::class);
 
-Route::get('index', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('index', compact('listaFooter', 'listaIcone', 'listaSocial'));
-});
+// Route::get('index', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('index', compact('listaFooter', 'listaIcone', 'listaSocial'));
+// });
 // sezione caracters
 
-Route::get('caracters', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('caracters', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('caracters');
+// Route::get('caracters', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('caracters', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('caracters');
 
-// sezione comics
+// // sezione comics
 
-Route::get('comics', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('comics', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('comics');
+// Route::get('comics', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('comics', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('comics');
 
-// sezione movies
+// // sezione movies
 
-Route::get('movies', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('movies', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('movies');
+// Route::get('movies', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('movies', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('movies');
 
-// sezione tv
+// // sezione tv
 
-Route::get('tv', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('tv', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('tv');
+// Route::get('tv', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('tv', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('tv');
 
-// sezione games
+// // sezione games
 
-Route::get('games', function () {
-     $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('games', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('games');
+// Route::get('games', function () {
+//      $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('games', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('games');
 
-// sezione collectibles
+// // sezione collectibles
 
-Route::get('collectibles', function () {
-     $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('collectibles', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('collectibles');
+// Route::get('collectibles', function () {
+//      $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('collectibles', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('collectibles');
 
-// sezione videos
+// // sezione videos
 
-Route::get('videos', function () {
-     $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('videos', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('videos');
+// Route::get('videos', function () {
+//      $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('videos', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('videos');
 
-// sezione fans
+// // sezione fans
 
-Route::get('fans', function () {
-     $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('fans', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('fans');
+// Route::get('fans', function () {
+//      $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('fans', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('fans');
 
-// sezione news
+// // sezione news
 
-Route::get('news', function () {
-     $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('news', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('news');
+// Route::get('news', function () {
+//      $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('news', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('news');
 
-// sezione shop
+// // sezione shop
 
-Route::get('shop', function () {
-    $listaFooter = config('footer'); 
-    $listaIcone = config('icons');
-    $listaSocial= config('social');
-    return view('shop', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
-})->name('shop');
+// Route::get('shop', function () {
+//     $listaFooter = config('footer'); 
+//     $listaIcone = config('icons');
+//     $listaSocial= config('social');
+//     return view('shop', compact( 'listaFooter', 'listaIcone', 'listaSocial'));
+// })->name('shop');
 
 // sezione comics singolo
 
