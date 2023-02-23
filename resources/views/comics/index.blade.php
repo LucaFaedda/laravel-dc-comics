@@ -14,7 +14,7 @@
                             @foreach ($comics as  $fumetto)
             
                                 <div class="card-personalizzata">
-                                    <a href="/comics_singolo/{id}', ['id' => $fumetto['id']])">
+                                    <a>
                                         <div class="image-container">
                                             <img src="{{$fumetto['thumb']}}">
                                         </div>

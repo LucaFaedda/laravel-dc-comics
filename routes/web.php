@@ -27,7 +27,7 @@ Route::get('index', function () {
     $listaFooter = config('footer'); 
     $listaIcone = config('icons');
     $listaSocial= config('social');
-    return view('comics.index', compact('listaFooter', 'listaIcone', 'listaSocial'));
+    return view('index', compact('listaFooter', 'listaIcone', 'listaSocial'));
 });
 // sezione caracters
 
@@ -141,4 +141,4 @@ Route::get('shop', function () {
 //    return view('comics_singolo', compact( 'comics_singolo','listaFooter', 'listaIcone', 'listaSocial'));
 // });
 
-Route::get('/comics_singolo/{id}', [ComicController::class, 'show']) -> name('comics-singolo');
+
