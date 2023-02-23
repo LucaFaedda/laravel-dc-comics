@@ -25,7 +25,7 @@
                 <div class="col-12 bk-image-2">
                     <div class="d-flex">
 
-                        {{-- <div class="lista-dc-comics d-flex flex-column mx-2">
+                        <div class="lista-dc-comics d-flex flex-column mx-2">
                             <p class="fw-bold text-light"> DC COMICS </p>
                                 @foreach ($listaFooter['DcComicsArray'] as $item )
                                     <a href=" {{$item['href']}}"> {{$item['nome']}}</a>
@@ -48,7 +48,7 @@
                                 @foreach ($listaFooter['ShopArray'] as $item )
                                     <a href=" {{$item['href']}}"> {{$item['nome']}}</a>
                                 @endforeach
-                        </div> --}}
+                        </div> 
                     </div>
                     <p class="text-light mt-3 personal-size">All Site TM and simbolo 2020 DC Entertainment, unless otherwise noted here. All rights reserved<br>Cookies Setting</p>
                 </div>

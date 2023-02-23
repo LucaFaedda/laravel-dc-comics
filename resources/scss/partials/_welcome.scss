@@ -1,0 +1,17 @@
+@use './variables' as *;
+@use './mixin' as *;
+
+
+.bk-dark {
+    background-color: #1c1c1c;
+}
+
+.bk-personalizzato {
+    background-image: url('https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkGzHi_XEAA60bL.jpeg?ssl=1');
+    background-size: cover;
+    height: 1200px;
+}
+
+.h1-personale {
+    font-size: 90px;
+}
