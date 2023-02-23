@@ -7,9 +7,7 @@
 
     </div>
     <div class="container mb-5">
-        <div class="intermezzo">
-            <img src="{{$comic['thumb']}}">
-        </div>
+            <img class="intermezzo" src="{{$comic['thumb']}}">
         <div class="row ">
             <div class="col-8 d-flex flex-column justify-content-between ">
                 <h1 class="light-blu ">{{ $comic['title'] }}</h1>
