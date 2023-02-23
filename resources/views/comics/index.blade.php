@@ -28,10 +28,10 @@
                 </div>
                 <div class="row d-flex justify-content-center mb-5 ">
                     <div class="col-5">
-                        <button class="text-light tw-bold btn-personalizzato ">LOAD MORE</button>
+                        <button class="text-light tw-bold btn-personalizzato " >LOAD MORE</button>
                     </div>
                     <div class="col-5">
-                        <a class="text-light btn-personalizzato" href="{{route('comics.create')}}">CREA NUOVO FUMETTO</a>
+                        <a class="text-light btn-personalizzato"  href="{{route('comics.create')}}">CREA NUOVO FUMETTO</a>
                     </div>
                 </div>
             </div>
