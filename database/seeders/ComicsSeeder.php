@@ -29,7 +29,6 @@ class ComicsSeeder extends Seeder
             $newComics->type = $comic['type'];
             $newComics->save();
 
-
         }
     }
 }
