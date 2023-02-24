@@ -3,7 +3,7 @@
 }
 
 .card-personalizzata {
-    width: calc(100% / 6 - 6px);
+    width: calc(100% / 5 - 6px);
     margin: 3px;
 }
 
@@ -33,6 +33,6 @@
 
 .btn-link {
     text-decoration: none;
-    padding: 5px 15px;
-
+    background-color: transparent;
+    border: none;
 }

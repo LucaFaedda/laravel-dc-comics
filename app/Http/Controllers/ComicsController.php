@@ -130,10 +130,6 @@ class ComicsController extends Controller
         $comic->update($form_data); // prendi il comic e mi fai l'update 
 
         return redirect()->route('comics.show' , [ 'comic' => $comic -> id]);
-
-
-
-
     }
 
     /**
