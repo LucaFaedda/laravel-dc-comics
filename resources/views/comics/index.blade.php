@@ -21,7 +21,7 @@
                                         <h6 class="text-light">{{ $fumetto['series'] }}</h6>
                                         <div class="mt-3 d-flex ">
                                             <a class=" btn-link bg-light" href="{{route('comics.show', $fumetto['id'])}}"><i class="fa-solid fa-magnifying-glass text-success"></i></a>
-                                            <a class="mx-2 btn-link bg-light" href="{{route('comics.show', $fumetto['id'])}}"><i class="fa-solid fa-pencil text-warning"></i></a>
+                                            <a class="mx-2 btn-link bg-light" href="{{route('comics.edit', $fumetto['id'])}}"><i class="fa-solid fa-pencil text-warning"></i></a>
                                             <a class=" btn-link bg-light" href="{{route('comics.show', $fumetto['id'])}}"><i class="fa-solid fa-trash-can text-danger"></i></a>
                                         </div>
 

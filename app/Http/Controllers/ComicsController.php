@@ -96,7 +96,12 @@ class ComicsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $listaFooter = config('footer'); 
+        $listaIcone = config('icons');
+        $listaSocial= config('social');
+        $comic = Comics::findOrFail($id);
+
+        return view('comics.edit' , compact('comic', 'listaFooter', 'listaIcone', 'listaSocial'));
     }
 
     /**
