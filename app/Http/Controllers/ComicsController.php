@@ -80,7 +80,7 @@ class ComicsController extends Controller
         //     ];
         // }
         
-        return view('comics.show', compact('comic', 'listaFooter', 'listaIcone', 'listaSocial'));
+        return view('comics.show' , compact('comic', 'listaFooter', 'listaIcone', 'listaSocial'));
     }
 
     /**
