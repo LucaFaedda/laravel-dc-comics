@@ -96,6 +96,8 @@ class ComicsController extends Controller
      */
     public function edit($id)
     {
+
+        // uguale allo show, cambia solo la rotta in return
         $listaFooter = config('footer'); 
         $listaIcone = config('icons');
         $listaSocial= config('social');
