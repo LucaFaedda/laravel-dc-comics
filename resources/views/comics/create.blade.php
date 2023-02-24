@@ -23,29 +23,47 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="form-group mb-4">
+                                @error('title')
+                                    <p class="text-danger fw-bold">{{$message}}</p>
+                                @enderror
                                 <label class="control-label mb-2 fw-bold text-light">Titolo</label>
                                 <input type="text" name="title" class="form-control" placeholder="Inserisci il titolo">
                             </div>
                         </div>
                         <div class="col-8">
+                            @error('description')
+                                <p class="text-danger fw-bold">{{$message}}</p> 
+                            @enderror
                             <label class="control-label mb-2 fw-bold text-light">Descrizione</label>
                             <textarea class="form-control" name="description" placeholder="Descrizione"></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-3">
+                            @error('price')
+                                <p class="text-danger fw-bold">{{$message}}</p>
+                            @enderror
                             <label class="control-label my-2 fw-bold text-light">Prezzo</label>
                             <input type="text" name="price" class="form-control" placeholder="Inserisci il Prezzo">
                         </div>
                         <div class="col-3">
+                            @error('sale_date')
+                                <p class="text-danger fw-bold">{{$message}}</p>
+                            @enderror
                             <label class="control-label my-2 fw-bold text-light">Data di Uscita</label>
                             <input type="date" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita">
                         </div>
                         <div class="col-3">
+                            @error('series')
+                                <p class="text-danger fw-bold">{{$message}}</p>
+                            @enderror
                             <label class="control-label my-2 fw-bold text-light">Serie</label>
                             <input type="text" name="series" class="form-control" placeholder="Inserisci la Serie">
                         </div>
                         <div class="col-3">
+                            @error('type')
+                                <p class="text-danger fw-bold">{{$message}}</p>
+                            @enderror
                             <label class="control-label my-2 fw-bold text-light">Tipo di Comics</label>
                             <select class="form-control" name="type">
                                 <option value="disabled selected value">Seleziona un Tipo</option>
@@ -56,6 +74,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
+                            @error('thumb')
+                                <p class="text-danger fw-bold">{{$message}}</p>
+                            @enderror
                             <label class="control-label my-2 fw-bold text-light">Link Immagine</label>
                             <input type="text" name="thumb" class="form-control" placeholder="Inserisci link Immagine">
                         </div>
