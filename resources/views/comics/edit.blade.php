@@ -9,7 +9,8 @@
     <div class="container">
         <div class="row p-5">
             <div class="col-12">
-                <form action="{{route('comics.store')}}" method="POST">
+                <form action="{{route('comics.update', $comic->id)}}" method="POST">
+                    @method('PUT')
                     @csrf
                     @if($errors->any())
                     <div class="alert alert-danger">
@@ -27,7 +28,7 @@
                                     <p class="text-danger fw-bold">{{$message}}</p>
                                 @enderror
                                 <label class="control-label mb-2 fw-bold text-light">Titolo</label>
-                                <input type="text" name="title" class="form-control" placeholder="Inserisci il titolo">
+                                <input type="text" name="title" class="form-control" placeholder="Inserisci il titolo" value="{{ old('title')  ?? $comic->title}}">
                             </div>
                         </div>
                         <div class="col-8">

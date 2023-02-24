@@ -120,15 +120,16 @@ class ComicsController extends Controller
             'title' => 'required|max:50',
             'description' => 'required',
             'thumb' => 'required',
-            'price' => 'required|decimal:3,1',
+            'price' => 'required',
             'series' => 'required|max:50',
             'sale_date' => 'required',
             'type' => 'required|max:50'
         ]);
         $form_data = $request->all();
-        $comic=update($form_data);
+        
+        $comic->update($form_data); // prendi il comic e mi fai l'update 
 
-        return redirect()->route('comics.show' , $newComic['id']);
+        return redirect()->route('comics.show' , [ 'comic' => $comic -> id]);
 
 
 
