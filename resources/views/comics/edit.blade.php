@@ -36,7 +36,7 @@
                                 <p class="text-danger fw-bold">{{$message}}</p> 
                             @enderror
                             <label class="control-label mb-2 fw-bold text-light">Descrizione</label>
-                            <textarea class="form-control" name="description" placeholder="Descrizione"></textarea>
+                            <textarea class="form-control" name="description" placeholder="Descrizione">{{ old('description')  ?? $comic->description}}"</textarea>
                         </div>
                     </div>
                     <div class="row">
