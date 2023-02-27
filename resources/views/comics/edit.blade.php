@@ -45,28 +45,28 @@
                                 <p class="text-danger fw-bold">{{$message}}</p>
                             @enderror
                             <label class="control-label my-2 fw-bold text-light">Prezzo</label>
-                            <input type="text" name="price" class="form-control" placeholder="Inserisci il Prezzo">
+                            <input type="text" name="price" class="form-control" placeholder="Inserisci il Prezzo" value="{{ old('price')  ?? $comic->price}}">
                         </div>
                         <div class="col-3">
                             @error('sale_date')
                                 <p class="text-danger fw-bold">{{$message}}</p>
                             @enderror
                             <label class="control-label my-2 fw-bold text-light">Data di Uscita</label>
-                            <input type="date" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita">
+                            <input type="date" name="sale_date" class="form-control" placeholder="Inserisci la data di uscita" value="{{ old('sale_date')  ?? $comic->sale_date}}">
                         </div>
                         <div class="col-3">
                             @error('series')
                                 <p class="text-danger fw-bold">{{$message}}</p>
                             @enderror
                             <label class="control-label my-2 fw-bold text-light">Serie</label>
-                            <input type="text" name="series" class="form-control" placeholder="Inserisci la Serie">
+                            <input type="text" name="series" class="form-control" placeholder="Inserisci la Serie" value="{{ old('series')  ?? $comic->series}}">
                         </div>
                         <div class="col-3">
                             @error('type')
                                 <p class="text-danger fw-bold">{{$message}}</p>
                             @enderror
                             <label class="control-label my-2 fw-bold text-light">Tipo di Comics</label>
-                            <select class="form-control" name="type">
+                            <select class="form-control" name="type" value="{{ old('type')  ?? $comic->type}}">
                                 <option value="disabled selected value">Seleziona un Tipo</option>
                                 <option value="comic book">Comic Book</option>
                                 <option value="graphic novel">Graphic Novel</option>
@@ -79,13 +79,13 @@
                                 <p class="text-danger fw-bold">{{$message}}</p>
                             @enderror
                             <label class="control-label my-2 fw-bold text-light">Link Immagine</label>
-                            <input type="text" name="thumb" class="form-control" placeholder="Inserisci link Immagine">
+                            <input type="text" name="thumb" class="form-control" placeholder="Inserisci link Immagine" value="{{ old('thumb')  ?? $comic->thumb}}">
                         </div>
                     </div>
                     <div class="row my-5">
                         <div class="col-3">
                             <button type="submit" class="form-control btn btn-primary">
-                                Salva nuovo Fumetto
+                                Cambia fumetto
                             </button>
                         </div>
                     </div>
